@@ -53,9 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\SpikeTrapDemo.cs" />
+     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\TrapDoorDemo.cs" />
      <Compile Include="Assets\Script\CameraFollow.cs" />
      <Compile Include="Assets\Script\CharacterScript.cs" />
      <Compile Include="Assets\Script\ControlCharacter.cs" />
+     <None Include="Assets\AurynSky\Dungeon Pack\READ ME.txt" />
      <None Include="Assets\Cartoon Temple Building Kit\ReadMe.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
