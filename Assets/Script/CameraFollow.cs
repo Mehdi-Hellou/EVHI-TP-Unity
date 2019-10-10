@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target; 
+    public Transform target;
+    public float smoothSpeed = 0.125f; 
+    public Vector3 offset; 
     // Start is called before the first frame update
     void Start()
     {
@@ -12,8 +14,13 @@ public class CameraFollow : MonoBehaviour
     }
     
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        // Vector3 desiredPosition = target.position + offset; 
+        // Vector3 smoothPosition = Vector3.Lerp (target.position,desiredPosition,smoothSpeed); 
+        // transform.position = smoothPosition; 
+ 
+        // transform.rotation = Quaternion.Lerp (transform.rotation,target.rotation,smoothSpeed); 
         transform.LookAt(target); 
     }
 }
