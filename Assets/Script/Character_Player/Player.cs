@@ -60,48 +60,47 @@ public class Player : MonoBehaviour
     void Movement()
     {
         
-    	if(controller.isGrounded)
-    	{
-            if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.S))
+    	
+        if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.S))
+        {
+            if (anim.GetBool("attacking") == true)
             {
-                if (anim.GetBool("attacking") == true)
-                {
-                    return;
-                }
-                else if (anim.GetBool("attacking") == false)
-                {
-                    anim.SetBool("running", true);
-                    anim.SetInteger("condition", 1);
-
-                    moveDir = new Vector3(0, 0, Input.GetAxis("Vertical"));
-                    moveDir = transform.TransformDirection(moveDir);
-                    moveDir *= speed;
-
-                }
+                return;
             }
-            else if (Input.GetKeyUp(KeyCode.Z) || Input.GetKeyUp(KeyCode.S))
+            else if (anim.GetBool("attacking") == false)
             {
-                anim.SetBool("running", false);
-                anim.SetInteger("condition", 0);
+                anim.SetBool("running", true);
+                anim.SetInteger("condition", 1);
 
-                moveDir = new Vector3(0, 0, 0);
+                moveDir = new Vector3(0, 0, Input.GetAxis("Vertical"));
+                moveDir = transform.TransformDirection(moveDir);
+                moveDir *= speed;
+
             }
+        }
+        else if (Input.GetKeyUp(KeyCode.Z) || Input.GetKeyUp(KeyCode.S))
+        {
+            anim.SetBool("running", false);
+            anim.SetInteger("condition", 0);
 
-            if (Input.GetKey(KeyCode.Space))
+            moveDir = new Vector3(0, 0, 0);
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (anim.GetBool("attacking") == true)
             {
-                if (anim.GetBool("attacking") == true)
-                {
-                    return;
-                }
-                else if (anim.GetBool("attacking") == false)
-                    moveDir.y = jumpspeed; 
+                return;
             }
+            else if (anim.GetBool("attacking") == false)
+                moveDir.y = jumpspeed; 
+        }
 
                        
-    	}
+    	
         
 
-    	rot += Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
+    	rot += Input.GetAxis("Horizontal")* rotSpeed * Time.deltaTime;
     	transform.eulerAngles = new Vector3( 0, rot, 0);
 
     	moveDir.y -= gravity * Time.deltaTime;
@@ -110,22 +109,20 @@ public class Player : MonoBehaviour
 
     void GetInput()
     {
-        if (controller.isGrounded)
-        {
-            if(Input.GetKey(KeyCode.A))
-            {
-              
-                if (anim.GetBool("running") == true)
-                {
-                    anim.SetBool("running",false); 
-                    anim.SetInteger("condition", 0); 
-                }
 
-                if(anim.GetBool("running") == false)
-                {
-                    Attacking();
-                }     
+        if(Input.GetKey(KeyCode.A))
+        {
+              
+            if (anim.GetBool("running") == true)
+            {
+                anim.SetBool("running",false); 
+                anim.SetInteger("condition", 0); 
             }
+
+            if(anim.GetBool("running") == false)
+            {
+                Attacking();
+            }     
         }
     }
 

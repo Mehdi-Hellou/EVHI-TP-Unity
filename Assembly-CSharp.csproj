@@ -94,7 +94,6 @@
     <Compile Include="Assets\Script\NavMesh\NavMeshModifier.cs" />
     <Compile Include="Assets\Script\NavMesh\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\Script\NavMesh\NavMeshSurface.cs" />
-    <Compile Include="Assets\Script\TargetPlayer.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
@@ -104,13 +103,8 @@
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShooting.cs" />
-    <Compile Include="Assets\Yurowm\Demo\Scripts\Actions.cs" />
-    <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterPanel.cs" />
-    <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterViewer.cs" />
-    <Compile Include="Assets\Yurowm\Demo\Scripts\PlayerController.cs" />
     <None Include="Assets\NavMesh Example Project\ProjectSettings\ProjectVersion.txt" />
     <None Include="Assets\AurynSky\Dungeon Pack\READ ME.txt" />
-    <None Include="Assets\Yurowm\Shaders\SkinShader.shader" />
     <None Include="Assets\readme.txt" />
     <None Include="Assets\Cartoon Temple Building Kit\ReadMe.txt" />
     <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />
