@@ -152,7 +152,7 @@ public class Player : MonoBehaviour
         {
             if (Time.time > bossAttackRate + bossLastAttack)
             {
-                GetComponent<TargetPlayer>().TakeDamage(1.0f);
+                GetComponent<TargetPlayer>().TakeDamage(2.0f);
                 bossLastAttack = Time.time; 
             }
         }
