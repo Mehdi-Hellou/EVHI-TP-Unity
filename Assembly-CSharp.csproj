@@ -94,6 +94,7 @@
     <Compile Include="Assets\Script\NavMesh\NavMeshModifier.cs" />
     <Compile Include="Assets\Script\NavMesh\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\Script\NavMesh\NavMeshSurface.cs" />
+    <Compile Include="Assets\Script\TargetPlayer.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
