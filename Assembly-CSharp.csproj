@@ -64,21 +64,36 @@
   <ItemGroup>
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\SpikeTrapDemo.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\TrapDoorDemo.cs" />
+    <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\NavMesh Example Project\Assets\Example02 - Obstacles\ObstacleAnimation.cs" />
     <Compile Include="Assets\NavMesh Example Project\Assets\Example03 - Runtime\LevelGenerator.cs" />
     <Compile Include="Assets\NavMesh Example Project\Assets\Example05 - LowMan\LowMan\Scripts\ThirdPersonCharacter.cs" />
-    <Compile Include="Assets\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Script\Character_Player\ChangeColor.cs" />
+    <Compile Include="Assets\Script\Character_Player\HealthBar.cs" />
+    <Compile Include="Assets\Script\Character_Player\Player.cs" />
+    <Compile Include="Assets\Script\Character_Player\Player_Click.cs" />
+    <Compile Include="Assets\Script\Character_Player\Shoot.cs" />
+    <Compile Include="Assets\Script\Character_Player\TargetPlayer.cs" />
     <Compile Include="Assets\Script\CharacterScript.cs" />
-    <Compile Include="Assets\Script\Ennemy.cs" />
-    <Compile Include="Assets\Script\HealthBar.cs" />
-    <Compile Include="Assets\Script\NavMeshLink.cs" />
-    <Compile Include="Assets\Script\NavMeshModifier.cs" />
-    <Compile Include="Assets\Script\NavMeshModifierVolume.cs" />
-    <Compile Include="Assets\Script\NavMeshSurface.cs" />
-    <Compile Include="Assets\Script\openDoor.cs" />
-    <Compile Include="Assets\Script\Player.cs" />
-    <Compile Include="Assets\Script\Player_Click.cs" />
-    <Compile Include="Assets\Script\Shoot.cs" />
+    <Compile Include="Assets\Script\Ennemy\Boss.cs" />
+    <Compile Include="Assets\Script\Ennemy\Ennemy.cs" />
+    <Compile Include="Assets\Script\Ennemy\Ennemy2.cs" />
+    <Compile Include="Assets\Script\Ennemy\HealthBarBoss.cs" />
+    <Compile Include="Assets\Script\Ennemy\Target.cs" />
+    <Compile Include="Assets\Script\Ennemy\TargetBoss.cs" />
+    <Compile Include="Assets\Script\Environment\ChangeLightIntensity.cs" />
+    <Compile Include="Assets\Script\Environment\HpItem.cs" />
+    <Compile Include="Assets\Script\Environment\NextScene.cs" />
+    <Compile Include="Assets\Script\Environment\openDoor.cs" />
+    <Compile Include="Assets\Script\Environment\Star.cs" />
+    <Compile Include="Assets\Script\GameManager\CameraFollow.cs" />
+    <Compile Include="Assets\Script\GameManager\End.cs" />
+    <Compile Include="Assets\Script\GameManager\GameManager.cs" />
+    <Compile Include="Assets\Script\GameManager\RestartClick.cs" />
+    <Compile Include="Assets\Script\NavMesh\NavMeshLink.cs" />
+    <Compile Include="Assets\Script\NavMesh\NavMeshModifier.cs" />
+    <Compile Include="Assets\Script\NavMesh\NavMeshModifierVolume.cs" />
+    <Compile Include="Assets\Script\NavMesh\NavMeshSurface.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
@@ -88,9 +103,16 @@
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShooting.cs" />
+    <Compile Include="Assets\Yurowm\Demo\Scripts\Actions.cs" />
+    <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterPanel.cs" />
+    <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterViewer.cs" />
+    <Compile Include="Assets\Yurowm\Demo\Scripts\PlayerController.cs" />
     <None Include="Assets\NavMesh Example Project\ProjectSettings\ProjectVersion.txt" />
     <None Include="Assets\AurynSky\Dungeon Pack\READ ME.txt" />
+    <None Include="Assets\Yurowm\Shaders\SkinShader.shader" />
+    <None Include="Assets\readme.txt" />
     <None Include="Assets\Cartoon Temple Building Kit\ReadMe.txt" />
+    <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -115,11 +137,11 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -298,20 +320,20 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
       <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>C:/Users/Mehdi/TP_Project_Unity_EVHI/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
