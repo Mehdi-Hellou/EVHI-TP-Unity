@@ -37,7 +37,7 @@ public class TargetPlayer : MonoBehaviour
         {
             for (int i = 0; i < this.GetComponentsInChildren<SkinnedMeshRenderer>().Length; i++)
             {
-                player.GetComponentsInChildren<SkinnedMeshRenderer>()[i].material.color = Color.yellow;
+                player.GetComponentsInChildren<SkinnedMeshRenderer>()[i].material.color = Color.blue;
             }
         }
         else if (healed)
