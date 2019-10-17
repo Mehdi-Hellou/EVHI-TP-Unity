@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HpItem : MonoBehaviour
 {
-    float healthGiven = 1.0f; 
+    float healthGiven = 2.0f; 
     // Start is called before the first frame update
     void Start()
     {

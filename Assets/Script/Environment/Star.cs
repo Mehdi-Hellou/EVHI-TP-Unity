@@ -7,7 +7,7 @@ public class Star : MonoBehaviour
     TargetPlayer player;
 
     float timeTaken; 
-    float timeEffect = 5.0f; 
+    float timeEffect = 20.0f; 
     // Start is called before the first frame update
     void Start()
     {

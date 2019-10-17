@@ -10,4 +10,8 @@ public class RestartClick : MonoBehaviour
         TargetPlayer.health = TargetPlayer.healthMax; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);    
     }
+    public void NoClick()
+    {
+        Application.Quit();
+    }
 }

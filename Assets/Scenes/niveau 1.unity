@@ -861,7 +861,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 302251079}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019914811}
+        m_MethodName: NoClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &302251079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4485,17 +4496,17 @@ PrefabInstance:
     - target: {fileID: 5825641300968643409, guid: 401b86e65bb717c40857c07e8122cd0d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -63.5
+      value: -66.4
       objectReference: {fileID: 0}
     - target: {fileID: 5825641300968643409, guid: 401b86e65bb717c40857c07e8122cd0d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9359112
+      value: -6.4144
       objectReference: {fileID: 0}
     - target: {fileID: 5825641300968643409, guid: 401b86e65bb717c40857c07e8122cd0d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.4
+      value: 11.414
       objectReference: {fileID: 0}
     - target: {fileID: 5825641300968643409, guid: 401b86e65bb717c40857c07e8122cd0d,
         type: 3}
@@ -4540,7 +4551,7 @@ PrefabInstance:
     - target: {fileID: 5825641300968643409, guid: 401b86e65bb717c40857c07e8122cd0d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.970751
+      value: 3.5925293
       objectReference: {fileID: 0}
     - target: {fileID: 5825641300968643409, guid: 401b86e65bb717c40857c07e8122cd0d,
         type: 3}
@@ -4550,7 +4561,7 @@ PrefabInstance:
     - target: {fileID: 5825641300968643409, guid: 401b86e65bb717c40857c07e8122cd0d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.97075
+      value: 5.891938
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 401b86e65bb717c40857c07e8122cd0d, type: 3}
