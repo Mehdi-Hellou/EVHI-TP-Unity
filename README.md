@@ -1,4 +1,4 @@
-########## Welcome to my game for soldier in the temple ##############
+########## Welcome to my game of soldier in the temple ##############
 
 In order to make move the soldier: 
 Z = move forward
