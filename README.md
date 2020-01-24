@@ -1,21 +1,20 @@
-########## Bienvenue Au Jeu du soldat dans un temple ##############
+########## Welcome to my game for soldier in the temple ##############
 
-Pour faire bouger votre personnage faite: 
-Z = avancer
-Q = tourner à gauche 
-D = tourner à droite 
-S = reculer 
+In order to make move the soldier: 
+Z = move forward
+Q = turn to the left  
+D = turn to the right 
+S = go back 
+Extract move: 
+A = shoot bullets.
+SPACE = jump.
 
-Mouvement extra: 
-A = tirer des balles.
-SPACE = sauter.
 
+During your adventurer, you will see platforms which skull head on it. It permit to open doors for next level.
 
-Vous croiserez lors de votre aventure une plateformer avec un squelette. Elle permet d'ouvir les portes quand vous passez dessus.
+There are two items inside the game: 
 
-Vous croiserez aussi deux items: 
+- A star which turn in you invincible. 
+- A heart give you two point life. 
 
-- Une étoile qui vous rends invisible pendant 20 secondes ( votre personnage est en jaune lors de son effet). 
-- Un coeur pour vous remontez 2 points de vie. 
-
-Bonne chance dans votre aventure.  
+Good luck in your adventure.  
